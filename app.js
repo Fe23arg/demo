@@ -15,16 +15,13 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
-// login page
-app.get('/about', function(req, res) {
-    res.render('about');
-});
-
-// register page
 app.get('/portfolio', function(req, res) {
     res.render('portfolio');
 });
 
+app.get('/portfoliodev', function(req, res) {
+    res.render('portfoliodev');
+});
 app.listen(4000);
 console.log('4000 puerto usado, Api funcionando');
 
