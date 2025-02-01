@@ -79,10 +79,10 @@ section {
 .btn:hover i {
   margin-left: 2rem;
 }
-
+/*  bottom: 0;  // para abajo la barra*/
 .navbar {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
   display: -webkit-box;
@@ -131,6 +131,7 @@ section {
 
 
 .home {
+  padding-top: 60px; 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,10 +151,16 @@ section {
   text-align: center;
 }
 
+/*  para bordes recto 
+  /*border-radius: 30% 40% 40% 30% / 30% 40% 40% 30%;*/
+/* borde curvos  
+  /*border-radius: 20% 30% 30% 20% / 20% 30% 30% 20%;*/
+
 .home .image img {
   height: 50rem;
   width: 50rem;
-  border-radius: 30% 40% 40% 30% / 30% 40% 40% 30%;
+  border-radius: 50%;
+
 }
 
 .home .content {
