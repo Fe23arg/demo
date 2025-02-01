@@ -230,6 +230,7 @@ section {
   color: #fff;
   text-transform: uppercase;
   padding-bottom: 1rem;
+  margin-left: 2rem; 
 }
 
 .about .row .info-container .box-container {
@@ -240,6 +241,7 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 2rem;
+  margin-left: 2rem; 
 }
 
 .about .row .info-container .box-container .box {
@@ -256,7 +258,7 @@ section {
 }
 
 .about .row .info-container .box-container .box h3 span {
-  color: orange;
+  color: #f7bc0c;
 }
 
 .about .row .count-container {
@@ -388,14 +390,14 @@ section {
 .education .box-container .box h3 {
   font-size: 2rem;
   padding: 1rem 0;
-  color: #fff;
+  color: #f7bc0c;
   padding-top: 3rem;
   font-weight: normal;
 }
 
 .education .box-container .box p {
   font-size: 1.5rem;
-  color: pink;
+  color: #fff;
   line-height: 2;
 }
 
