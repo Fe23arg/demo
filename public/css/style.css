@@ -40,7 +40,7 @@ section {
 
 .heading {
   text-align: center;
-  font-size: 4vw;
+  font-size: 2,5vw;
   color: #fff;
   margin-bottom: 3rem;
   text-transform: uppercase;
@@ -92,10 +92,13 @@ section {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+          border-bottom-left-radius: 15px; /* Bordes redondeados en la parte inferior */
+          border-bottom-right-radius: 15px; /* Bordes redondeados en la parte inferior */
+          padding: 0.5rem 1rem; /* Ajusta la altura de la navbar */        
 }
 
 .navbar a {
-  padding: 2rem;
+  padding: 1rem 2rem; /* Reducido el padding para menor altura */
   font-size: 2rem;
   background: #27292b;
   -webkit-box-flex: 1;
@@ -105,6 +108,7 @@ section {
   text-align: center;
   -webkit-transition: .2s linear;
   transition: .2s linear;
+  
 }
 
 .navbar a i {
@@ -114,7 +118,7 @@ section {
 
 .navbar a:hover {
   background: #3b3d3c;
-  padding-bottom: 6rem;
+  padding-bottom: 3rem; /* Ajusta el padding en hover */
 }
 
 .navbar a:hover i {
@@ -412,12 +416,14 @@ section {
       grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
   gap: 1.5rem;
   margin-bottom: 2rem;
+
 }
 
 .portfolio .box-container .box {
   height: 30rem;
   overflow: hidden;
   position: relative;
+  border-radius: 15px; 
 }
 
 .portfolio .box-container .box:hover .content {
@@ -430,6 +436,7 @@ section {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+     border-radius: 15px; /* Redondea */
 }
 
 .portfolio .box-container .box .content {
@@ -457,6 +464,7 @@ section {
           transform: translateY(-100%);
   -webkit-transition: .2s linear;
   transition: .2s linear;
+  border-radius: 15px; /* Redondea las esquinas del contenido */
 }
 
 .portfolio .box-container .box .content h3 {
@@ -601,6 +609,36 @@ section {
   color: #0d0d0d;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #27292b;
+  color:#00aacc;
+  padding: 1rem 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 1000;
+}
+.footer p {
+  margin: 0;
+  font-size: 1.4rem;
+}
+.footer a {
+  color:#00aacc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s linear;
+  padding: 0 0.5rem;
+}
+.footer a:hover {
+  color: #0ce3eb;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -640,6 +678,14 @@ section {
   .contact .row form .inputBox input {
     width: 100%;
     margin-bottom: 1rem;
+  }
+  
+  .footer {
+    padding: 0.5rem 0;
+  }
+
+  .footer p {
+    font-size: 1.2rem;
   }
 }
 
