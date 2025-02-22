@@ -426,6 +426,13 @@ section {
   border-radius: 15px; 
 }
 
+.portfolio .box-container .box .video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Asegura que el video cubra el área */
+  border-radius: 15px; /* Redondea */
+}
+
 .portfolio .box-container .box:hover .content {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
